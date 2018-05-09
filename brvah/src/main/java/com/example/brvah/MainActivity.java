@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
         getData();
     }
 
+    //发送测试
+
+
     private void getData() {
         new OkHttpClient().newCall(new Request.Builder().url("http://172.16.47.35:8080/json/day04.json").build()).enqueue(new Callback() {
             @Override
